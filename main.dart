@@ -16,16 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [
-        Provider<FlutterFireAuthService>(
-          create: (_) => FlutterFireAuthService(FirebaseAuth.instance),
-        ),
-        StreamProvider(
-          create: (context) =>
-              context.read<FlutterFireAuthService>().authStateChanges,
-          initialData: null,
-        )
-      ],
+      providers: [],
       child: MaterialApp(
         title: 'FlutterFire Provider Template',
         home: OpeningView(),

@@ -57,13 +57,7 @@ class _RegisterViewState extends State<RegisterView> {
                 color: Colors.blue,
               ),
               child: MaterialButton(
-                onPressed: () {
-                  context.read<FlutterFireAuthService>().signUp(
-                        email: emailController.text.trim(),
-                        password: passwordController.text.trim(),
-                        context: context,
-                      );
-                },
+                onPressed: () {},
                 child: Text(
                   "Sign Up",
                   style: TextStyle(

@@ -57,13 +57,7 @@ class _LoginViewState extends State<LoginView> {
                 color: Colors.blue,
               ),
               child: MaterialButton(
-                onPressed: () {
-                  context.read<FlutterFireAuthService>().signIn(
-                        email: emailController.text.trim(),
-                        password: passwordController.text.trim(),
-                        context: context,
-                      );
-                },
+                onPressed: () {},
                 child: Text(
                   "Sign In",
                   style: TextStyle(

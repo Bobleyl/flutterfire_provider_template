@@ -30,7 +30,6 @@ class _HomeViewState extends State<HomeView> {
             IconButton(
               onPressed: () {
                 print("Sign Out Pressed");
-                context.read<FlutterFireAuthService>().signOut();
                 Navigator.of(context).pop();
               },
               icon: Icon(
